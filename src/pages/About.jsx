@@ -71,13 +71,13 @@ function About() {
         <div className="story-images">
           <img
             className="story-main-image"
-            src="/src/assets/images/c2.png"
+            src="/images/images/c2.png"
             alt="Construction team"
           />
 
           <img
             className="story-small-image"
-            src="/src/assets/images/ChatGPT Image Mar 2, 2026, 02_19_55 PM.png"
+            src="/images/images/ChatGPT Image Mar 2, 2026, 02_19_55 PM.png"
             alt="Design consultation"
           />
         </div>
@@ -87,7 +87,7 @@ function About() {
       <section className="mission-section">
         <div className="mission-card">
           <img
-            src="/src/assets/images/Mission-PNG-Clipart-Background.png"
+            src="/images/images/Mission-PNG-Clipart-Background.png"
             alt="Mission"
           />
 
@@ -104,7 +104,7 @@ function About() {
 
         <div className="vision-card">
           <img
-            src="/src/assets/images/ec470275507757cef73993b78b1027c4.jpg"
+            src="/images/images/ec470275507757cef73993b78b1027c4.jpg"
             alt="Vision"
           />
 
@@ -126,7 +126,7 @@ function About() {
         <div className="values-grid">
           <div className="value-card">
             <img
-              src="/src/assets/images/images.png"
+              src="/images/images/images.png"
               alt="Integrity"
             />
             <h3>Integrity</h3>
@@ -138,7 +138,7 @@ function About() {
 
           <div className="value-card">
             <img
-              src="/src/assets/images/premium-certified-quality-stamp_78370-1800.avif"
+              src="/images/images/premium-certified-quality-stamp_78370-1800.avif"
               alt="Quality"
             />
             <h3>Quality</h3>
@@ -150,7 +150,7 @@ function About() {
 
           <div className="value-card">
             <img
-              src="/src/assets/images/11320141.png"
+              src="/images/images/11320141.png"
               alt="Commitment"
             />
             <h3>Commitment</h3>
@@ -162,7 +162,7 @@ function About() {
 
           <div className="value-card">
             <img
-              src="/src/assets/images/1083501.png"
+              src="/images/images/1083501.png"
               alt="Customer Focus"
             />
             <h3>Customer Focus</h3>
@@ -183,25 +183,25 @@ function About() {
 
         <div className="team-grid">
           <div className="team-member">
-            <img src="/src/assets/images/P1.png" alt="Robert Anderson" />
+            <img src="/images/images/P1.png" alt="Robert Anderson" />
             <h3>Robert Anderson</h3>
             <p>Chief Executive Officer</p>
           </div>
 
           <div className="team-member">
-            <img src="/src/assets/images/p2.png" alt="Jennifer Martinez" />
+            <img src="/images/images/p2.png" alt="Jennifer Martinez" />
             <h3>Jennifer Martinez</h3>
             <p>Head of Design</p>
           </div>
 
           <div className="team-member">
-            <img src="/src/assets/images/p3.png" alt="Michael Thompson" />
+            <img src="/images/images/p3.png" alt="Michael Thompson" />
             <h3>Michael Thompson</h3>
             <p>Project Manager</p>
           </div>
 
           <div className="team-member">
-            <img src="/src/assets/images/p4.png" alt="Sarah Williams" />
+            <img src="/images/images/p4.png" alt="Sarah Williams" />
             <h3>Sarah Williams</h3>
             <p>Head of Design</p>
           </div>
@@ -229,7 +229,7 @@ function About() {
       <footer className="about-footer">
         <div className="footer-about">
           <img
-            src="/src/assets/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
+            src="/images/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
             alt="BluePeak Infra & Constructions"
           />
 

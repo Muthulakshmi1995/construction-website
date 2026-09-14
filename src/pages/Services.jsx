@@ -56,7 +56,7 @@ function Services() {
         </div>
 <div className="service-image">
   <img
-    src="/src/assets/images/c2.png"
+    src="/images/images/c2.png"
     alt="Commercial Construction"
   />
 <div className="image-hover">
@@ -76,7 +76,7 @@ function Services() {
 
     <div className="service-image">
   <img
-    src="/src/assets/images/c3.png"
+    src="/images/images/c3.png"
     alt="Commercial Construction"
   />
  <div className="image-hover">
@@ -151,7 +151,7 @@ function Services() {
 
        <div className="service-image">
   <img
-    src="/src/assets/images/c4.png"
+    src="/images/images/c4.png"
     alt="Commercial Construction"
   />
  <div className="image-hover">
@@ -170,7 +170,7 @@ function Services() {
 
    <div className="service-image">
   <img
-    src="/src/assets/images/c5.png"
+    src="/images/images/c5.png"
     alt="Commercial Construction"
   />
  <div className="image-hover">
@@ -244,7 +244,7 @@ function Services() {
 
     <div className="service-image">
   <img
-    src="/src/assets/images/c6.png"
+    src="/images/images/c6.png"
     alt="Commercial Construction"
   />
   <div className="image-hover">
@@ -280,7 +280,7 @@ function Services() {
         <div className="footer-about">
 
           <img
-            src="/src/assets/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
+            src="/images/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
             alt="BluePeak Infra & Constructions"
           />
 

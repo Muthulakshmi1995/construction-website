@@ -37,7 +37,7 @@
   position: relative;
   min-height: 350px;
   overflow: hidden;
-  background-image: url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_17_50 PM.png");
+  background-image: url("/images/images/ChatGPT Image Mar 3, 2026, 12_17_50 PM.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -601,7 +601,7 @@
       rgba(20, 31, 53, 0.84),
       rgba(20, 31, 53, 0.84)
     ),
-    url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
+    url("/images/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
   background-size: cover;
   background-position: center;
   padding: 30px 45px;
@@ -1143,7 +1143,7 @@
 .home-final-cta {
   position: relative;
   min-height: 260px;
-  background-image: url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
+  background-image: url("/images/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
   background-size: cover;
   background-position: center;
   display: flex;

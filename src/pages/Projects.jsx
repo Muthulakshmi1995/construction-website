@@ -8,7 +8,7 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      image: "/src/assets/images/pr1.png",
+      image: "/images/images/pr1.png",
       title: "Lakeview Villa – Chennai",
       location: "Chennai",
       size: "3,200 Sq.ft",
@@ -16,7 +16,7 @@ function Projects() {
     },
     {
       id: 2,
-      image: "/src/assets/images/pr2.png",
+      image: "/images/images/pr2.png",
       title: "Metro Business Hub- Bangalore",
       location: "Bangalore",
       size: "12,000 Sq.ft",
@@ -24,7 +24,7 @@ function Projects() {
     },
     {
       id: 3,
-      image: "/src/assets/images/pr3.png",
+      image: "/images/images/pr3.png",
       title: "Green Meadows Residence",
       location: "Coimbatore",
       size: "2,400 Sq.ft",
@@ -32,7 +32,7 @@ function Projects() {
     },
     {
       id: 4,
-      image: "/src/assets/images/pr4.png",
+      image: "/images/images/pr4.png",
       title: "Skyline Retail Plaza",
       location: "Hyderabad",
       size: "8,500 Sq.ft",
@@ -40,7 +40,7 @@ function Projects() {
     },
     {
       id: 5,
-      image: "/src/assets/images/pr5.png",
+      image: "/images/images/pr5.png",
       title: "Heritage Home Renovation",
       location: "Chennai",
       size: "1,800 Sq.ft",
@@ -48,7 +48,7 @@ function Projects() {
     },
     {
       id: 6,
-      image: "/src/assets/images/pr6.png",
+      image: "/images/images/pr6.png",
       title: "Palm Grove Apartments",
       location: "Trichy",
       size: "15,000 Sq.ft",
@@ -182,7 +182,7 @@ function Projects() {
         <div className="footer-about">
 
           <img
-            src="/src/assets/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
+            src="/images/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
             alt="BluePeak Infra & Constructions"
           />
 

@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <img
-          src="/src/assets/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
+          src="/images/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
           alt="Blue Peak Infra & Constructions"
         />
       </div>

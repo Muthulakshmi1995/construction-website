@@ -238,7 +238,7 @@ function Contact() {
       <footer className="contact-footer">
         <div className="footer-about">
           <img
-            src="/src/assets/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
+            src="/images/images/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
             alt="BluePeak Infra & Constructions"
           />
 

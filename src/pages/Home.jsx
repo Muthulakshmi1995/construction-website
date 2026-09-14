@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import "./Home.css";
 
-const A = "/src/assets/images/";
+const A = "/images/images/";
 
 function Home() {
   const [formData, setFormData] = useState({

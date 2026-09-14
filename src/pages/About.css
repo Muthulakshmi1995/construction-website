@@ -9,7 +9,7 @@
   height: 275px;
   background-image:
     linear-gradient(rgba(18, 27, 48, 0.72), rgba(18, 27, 48, 0.72)),
-    url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
+    url("/images/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -323,7 +323,7 @@
   min-height: 310px;
   background-image:
     linear-gradient(rgba(15, 26, 50, 0.78), rgba(15, 26, 50, 0.78)),
-    url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
+    url("/images/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
   background-size: cover;
   background-position: center;
   text-align: center;
