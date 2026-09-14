@@ -368,12 +368,14 @@
 .view-details-btn {
   min-width: 150px;
   height: 38px;
-
   padding: 4px 5px 4px 16px;
 
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+
+  text-decoration: none;
+  cursor: pointer;
 
   background: white;
   color: #283451;

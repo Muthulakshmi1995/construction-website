@@ -69,31 +69,37 @@ function Home() {
 
   const services = [
     {
+      id: "residential",
       title: "Residential Construction",
       text: "Custom-built homes with quality and timely delivery.",
       image: "c1.png",
     },
     {
+      id: "commercial",
       title: "Commercial Construction",
       text: "Modern and durable spaces designed for business.",
       image: "c2.png",
     },
     {
+      id: "maintenance",
       title: "Maintenance Services",
       text: "Reliable repair and upkeep solutions for your property.",
       image: "c3.png",
     },
     {
+      id: "interior",
       title: "Interior Planning & Designing",
       text: "Smart, stylish interiors tailored to your lifestyle.",
       image: "c4.png",
     },
     {
+      id: "renovation",
       title: "Renovation & Remodeling",
       text: "Upgrade old spaces into modern, functional designs.",
       image: "c5.png",
     },
     {
+      id: "architectural",
       title: "Architectural Plans",
       text: "Accurate blueprints and approval-ready designs.",
       image: "c6.png",
@@ -248,11 +254,7 @@ function Home() {
           </div>
         </div>
 
-        <img
-          className="hero-chatbot"
-          src={`${A}pngtree-chatbot-symbol-3d-icon-isolated-on-a-transparent-background-symbolizing-ai-png-image_15359544.png`}
-          alt="Chatbot"
-        />
+       
       </section>
 
       {/* SERVICES */}
@@ -267,13 +269,17 @@ function Home() {
               <div className="service-card-image">
                 <img src={`${A}${service.image}`} alt={service.title} />
 
-             
                 <div className="service-hover">
-  <div className="view-details-btn">
-    <span>View Details</span>
-    <b>›</b>
-  </div>
-</div>
+                  <a
+                    href={`/services${
+                      service.id === "residential" ? "" : `#${service.id}`
+                    }`}
+                    className="view-details-btn"
+                  >
+                    <span>View Details</span>
+                    <b>›</b>
+                  </a>
+                </div>
               </div>
 
               <h3>{service.title}</h3>
@@ -303,7 +309,9 @@ function Home() {
       <section className="why-section section-white">
         <div className="section-heading">
           <h2>Why Choose Us</h2>
-          <p>Comprehensive solutions designed for modern construction projects</p>
+          <p>
+            Comprehensive solutions designed for modern construction projects
+          </p>
         </div>
 
         <div className="why-grid">
@@ -555,11 +563,15 @@ function Home() {
           <div className="footer-column">
             <h3>Our Services</h3>
             <a href="/services">Residential Construction</a>
-            <a href="/services">Commercial Construction</a>
-            <a href="/services">Maintenance Services</a>
-            <a href="/services">Interior Planning & Designing</a>
-            <a href="/services">Renovation & Remodeling</a>
-            <a href="/services">Architectural Plans & Approvals</a>
+            <a href="/services#commercial">Commercial Construction</a>
+            <a href="/services#maintenance">Maintenance Services</a>
+            <a href="/services#interior">
+              Interior Planning & Designing
+            </a>
+            <a href="/services#renovation">Renovation & Remodeling</a>
+            <a href="/services#architectural">
+              Architectural Plans & Approvals
+            </a>
           </div>
 
           <div className="footer-column contact-column">

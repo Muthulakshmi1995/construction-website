@@ -50,6 +50,7 @@ function Contact() {
           </h2>
 
           <div className="contact-cards">
+            {/* OFFICE */}
             <div className="contact-card">
               <div className="contact-icon">⌖</div>
 
@@ -61,6 +62,7 @@ function Contact() {
               </div>
             </div>
 
+            {/* PHONE */}
             <div className="contact-card">
               <div className="contact-icon">⌕</div>
 
@@ -71,6 +73,7 @@ function Contact() {
               </div>
             </div>
 
+            {/* EMAIL */}
             <div className="contact-card">
               <div className="contact-icon">♡</div>
 
@@ -81,13 +84,14 @@ function Contact() {
               </div>
             </div>
 
+            {/* BUSINESS HOURS */}
             <div className="contact-card">
               <div className="contact-icon">◷</div>
 
               <div>
                 <h3>Business Hours</h3>
                 <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM-4:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
                 <p>Sunday: Closed</p>
               </div>
             </div>
@@ -99,9 +103,11 @@ function Contact() {
           <h2>Send Us a Message</h2>
 
           <form onSubmit={handleSubmit}>
+            {/* NAME + EMAIL */}
             <div className="form-row">
               <div className="form-group">
                 <label>Name</label>
+
                 <input
                   type="text"
                   name="name"
@@ -113,6 +119,7 @@ function Contact() {
 
               <div className="form-group">
                 <label>Email Address</label>
+
                 <input
                   type="email"
                   name="email"
@@ -123,12 +130,14 @@ function Contact() {
               </div>
             </div>
 
+            {/* PHONE + PROJECT TYPE */}
             <div className="form-row">
               <div className="form-group">
                 <label>Phone Number</label>
 
                 <div className="phone-input">
                   <span>🇮🇳</span>
+
                   <input
                     type="tel"
                     name="phone"
@@ -156,6 +165,7 @@ function Contact() {
               </div>
             </div>
 
+            {/* LOCATION */}
             <div className="form-group location-group">
               <label>Location</label>
 
@@ -172,6 +182,7 @@ function Contact() {
               </select>
             </div>
 
+            {/* MESSAGE */}
             <div className="form-group">
               <label>Message</label>
 
@@ -182,6 +193,7 @@ function Contact() {
               ></textarea>
             </div>
 
+            {/* SEND BUTTON */}
             <button type="submit" className="send-btn hover-orange">
               <span>Send Message</span>
               <b>›</b>
@@ -193,22 +205,17 @@ function Contact() {
       {/* MAP */}
       <section className="map-section">
         <div className="map-card">
+          {/* LOCATION BOX */}
           <div className="map-label">
             <strong>India</strong>
             <span>Chennai, Tamil Nadu</span>
           </div>
 
-        <div className="map-content">
-  <div className="map-road road-one"></div>
-  <div className="map-road road-two"></div>
-  <div className="map-road road-three"></div>
-
-  <div className="map-location">
-    <span>●</span>
-    <strong>Chennai</strong>
-    <small>Tamil Nadu</small>
-  </div>
-</div>
+          {/* LOCATION MARKER */}
+          <div className="map-marker">
+            <div className="map-marker-pin"></div>
+            <div className="map-marker-dot"></div>
+          </div>
         </div>
       </section>
 
@@ -243,6 +250,7 @@ function Contact() {
 
         <div className="footer-column">
           <h3>Quick Links</h3>
+
           <a href="/about">About</a>
           <a href="/services">Services</a>
           <a href="/projects">Projects</a>
@@ -251,16 +259,22 @@ function Contact() {
 
         <div className="footer-column">
           <h3>Our Services</h3>
+
           <a href="/services">Residential Construction</a>
-          <a href="/services">Commercial Construction</a>
-          <a href="/services">Maintenance Services</a>
-          <a href="/services">Interior Planning & Designing</a>
-          <a href="/services">Renovation & Remodeling</a>
-          <a href="/services">Architectural Plans & Approvals</a>
+          <a href="/services#commercial">Commercial Construction</a>
+          <a href="/services#maintenance">Maintenance Services</a>
+          <a href="/services#interior">
+            Interior Planning & Designing
+          </a>
+          <a href="/services#renovation">Renovation & Remodeling</a>
+          <a href="/services#architectural">
+            Architectural Plans & Approvals
+          </a>
         </div>
 
         <div className="footer-column">
           <h3>Contact Us</h3>
+
           <p>📍 123 Construction Ave, Building District, City 12345</p>
           <p>📞 +91-1234567890</p>
           <p>✉ info@supportconstruction.com</p>

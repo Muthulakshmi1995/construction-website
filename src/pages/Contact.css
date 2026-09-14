@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap");
+
 .contact-page {
   background: white;
   color: #111;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .contact-hero {
   height: 275px;
@@ -38,12 +42,14 @@
 .contact-hero p {
   max-width: 800px;
   color: white;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 1.6;
 }
 
-
-/* CONTACT SECTION */
+/* =========================
+   CONTACT SECTION
+========================= */
 
 .contact-section {
   max-width: 1120px;
@@ -53,11 +59,13 @@
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 35px;
+
   align-items: start;
 }
 
-
-/* LEFT */
+/* =========================
+   LEFT SIDE
+========================= */
 
 .contact-info h2 {
   font-family: "Oswald", sans-serif;
@@ -119,17 +127,20 @@
 }
 
 .contact-card h3 {
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   margin-bottom: 10px;
 }
 
 .contact-card p {
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   line-height: 1.65;
 }
 
-
-/* FORM */
+/* =========================
+   FORM
+========================= */
 
 .contact-form-box {
   border: 1px solid #dddddd;
@@ -139,9 +150,11 @@
 
 .contact-form-box h2 {
   text-align: center;
+
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 500;
+
   margin-bottom: 25px;
 }
 
@@ -157,8 +170,11 @@
 
 .form-group label {
   display: block;
+
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
+
   margin-bottom: 8px;
 }
 
@@ -166,13 +182,20 @@
 .form-group select,
 .form-group textarea {
   width: 100%;
+
   border: none;
   outline: none;
+
   background: #efefec;
+
   border-radius: 7px;
+
   padding: 14px;
+
   font-family: "Inter", sans-serif;
   font-size: 13px;
+
+  box-sizing: border-box;
 }
 
 .form-group input,
@@ -188,8 +211,10 @@
 .phone-input {
   display: flex;
   align-items: center;
+
   background: #efefec;
   border-radius: 7px;
+
   height: 48px;
   padding-left: 12px;
 }
@@ -208,62 +233,87 @@
   width: 50%;
 }
 
+/* =========================
+   SEND BUTTON
+========================= */
 
-.send-message-btn span {
-  background: white;
-  border-radius: 20px;
-  padding: 8px 30px;
-}
 .send-btn {
   position: relative;
   overflow: hidden;
+  isolation: isolate;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
   border: 2px solid #f59e0b;
   background: white;
   color: #222;
-  padding: 12px 28px;
-  border-radius: 6px;
+
+  padding: 5px 5px 5px 15px;
+  border-radius: 20px;
+
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 600;
+
   cursor: pointer;
-  z-index: 1;
+
   transition: color 0.4s ease;
 }
 
 .send-btn::before {
   content: "";
+
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+
   background: #f59e0b;
-  transition: left 0.4s ease;
+
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+
   z-index: -1;
 }
 
 .send-btn:hover::before {
-  left: 0;
+  transform: translateX(0);
 }
 
-.send-btn:hover {
-  color: white;
+.send-btn span,
+.send-btn b {
+  position: relative;
+  z-index: 2;
 }
 
-.send-message-btn b {
-  width: 30px;
-  height: 30px;
+.send-btn b {
+  width: 24px;
+  height: 24px;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
+  background: #f59e0b;
   color: white;
-  font-size: 20px;
+
+  border-radius: 50%;
+
+  font-size: 16px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
 }
 
+.send-btn:hover b {
+  background: #283451;
+  transform: scale(1.05);
+}
 
-/* MAP */
+/* =========================
+   MAP
+========================= */
 
 .map-section {
   max-width: 1000px;
@@ -274,58 +324,113 @@
 .map-card {
   height: 300px;
 
-  border-radius: 18px;
+  position: relative;
   overflow: hidden;
 
-  position: relative;
+  border-radius: 18px;
 
-  background:
-    linear-gradient(
-      rgba(190, 225, 210, 0.5),
-      rgba(190, 225, 210, 0.5)
-    ),
-    url("/src/assets/images/map.png");
+  background-image: url("/src/assets/images/map.png");
 
   background-size: cover;
   background-position: center;
 }
 
+/* TOP LEFT MAP LABEL */
+
 .map-label {
   position: absolute;
+
   left: 20px;
   top: 15px;
 
-  width: 280px;
+  width: 125px;
 
   background: white;
-  border-radius: 10px;
-  padding: 18px;
+
+  border-radius: 4px;
+
+  padding: 10px 12px;
 
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 3px;
+
+  z-index: 3;
 }
 
 .map-label strong {
-  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #222;
 }
 
 .map-label span {
-  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-size: 8px;
+  color: #555;
 }
 
-.map-content {
+/* MAP LOCATION MARKER */
+
+.map-marker {
   position: absolute;
-  right: 70px;
-  top: 45%;
-  font-size: 22px;
-  font-weight: 600;
+
+  left: 58%;
+  top: 50%;
+
+  width: 30px;
+  height: 40px;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 4;
 }
 
+/* PIN SHAPE */
 
-/* CTA */
+.map-marker-pin {
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background: #f59e0b;
+
+  border-radius: 50% 50% 50% 0;
+
+  transform: translateX(-50%) rotate(-45deg);
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* WHITE CENTER */
+
+.map-marker-dot {
+  position: absolute;
+
+  left: 50%;
+  top: 5px;
+
+  width: 7px;
+  height: 7px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 2;
+}
+
+/* =========================
+   CTA
+========================= */
 
 .contact-cta {
   min-height: 290px;
@@ -348,27 +453,70 @@
 
 .contact-cta h2 {
   color: #f59e0b;
+
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 500;
+
   margin-bottom: 15px;
 }
 
 .contact-cta p {
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   margin-bottom: 30px;
 }
 
 .contact-cta button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
   border: 3px solid #f59e0b;
   border-radius: 25px;
+
   background: white;
+  color: #222;
+
   padding: 4px 5px 4px 20px;
+
   cursor: pointer;
+
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.contact-cta button::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: #f59e0b;
+
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+
+  z-index: -1;
+}
+
+.contact-cta button:hover::before {
+  transform: translateX(0);
+}
+
+.contact-cta button span,
+.contact-cta button b {
+  position: relative;
+  z-index: 2;
 }
 
 .contact-cta button span {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .contact-cta button b {
@@ -384,18 +532,22 @@
   color: white;
 
   border-radius: 50%;
+
   font-size: 20px;
 }
 
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .contact-footer {
   background: #0d162a;
   color: white;
 
   display: grid;
+
   grid-template-columns: 1.4fr 0.8fr 1.2fr 1.2fr;
+
   gap: 50px;
 
   padding: 45px 55px 30px;
@@ -408,6 +560,9 @@
 
 .footer-about p {
   max-width: 300px;
+
+  font-family: "Inter", sans-serif;
+
   font-size: 13px;
   line-height: 1.7;
 }
@@ -419,6 +574,7 @@
 }
 
 .footer-column h3 {
+  font-family: "Oswald", sans-serif;
   font-size: 17px;
   margin-bottom: 8px;
 }
@@ -426,13 +582,29 @@
 .footer-column a,
 .footer-column p {
   color: #ddd;
+
   text-decoration: none;
+
+  font-family: "Inter", sans-serif;
+
   font-size: 13px;
   line-height: 1.5;
 }
 
+.footer-column a {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
 
-/* RESPONSIVE */
+.footer-column a:hover {
+  color: #ffc107;
+  transform: translateX(4px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 900px) {
   .contact-section {
@@ -441,6 +613,10 @@
 
   .contact-footer {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .map-section {
+    max-width: 900px;
   }
 }
 
@@ -451,6 +627,10 @@
 
   .contact-hero h1 {
     font-size: 30px;
+  }
+
+  .contact-hero p {
+    font-size: 12px;
   }
 
   .contact-cards {
@@ -467,84 +647,25 @@
 
   .map-card {
     height: 250px;
+    border-radius: 12px;
+  }
+
+  .map-label {
+    left: 10px;
+    top: 10px;
+  }
+
+  .map-marker {
+    left: 55%;
+    top: 52%;
   }
 
   .contact-footer {
     grid-template-columns: 1fr;
     padding: 35px 25px;
   }
-}
-.map-content {
-  position: relative;
-  width: 100%;
-  height: 260px;
-  overflow: hidden;
-  border-radius: 10px;
-  background:
-    linear-gradient(25deg, transparent 47%, #d6d6d6 48%, #d6d6d6 51%, transparent 52%),
-    linear-gradient(-35deg, transparent 46%, #e2e2e2 47%, #e2e2e2 52%, transparent 53%),
-    #eeeeee;
-}
 
-.map-road {
-  position: absolute;
-  background: white;
-  box-shadow: 0 0 0 1px #dddddd;
-}
-
-.road-one {
-  width: 120%;
-  height: 28px;
-  top: 35%;
-  left: -10%;
-  transform: rotate(-12deg);
-}
-
-.road-two {
-  width: 110%;
-  height: 20px;
-  top: 62%;
-  left: -5%;
-  transform: rotate(18deg);
-}
-
-.road-three {
-  width: 80%;
-  height: 16px;
-  top: 12%;
-  left: 12%;
-  transform: rotate(45deg);
-}
-
-.map-location {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.map-location span {
-  display: block;
-  color: #f59e0b;
-  font-size: 24px;
-  line-height: 1;
-}
-
-.map-location strong {
-  display: block;
-  color: #283451;
-  font-family: "Oswald", sans-serif;
-  font-size: 15px;
-  margin-top: 4px;
-}
-
-.map-location small {
-  color: #777;
-  font-family: "Inter", sans-serif;
-  font-size: 9px;
+  .footer-about img {
+    width: 220px;
+  }
 }
