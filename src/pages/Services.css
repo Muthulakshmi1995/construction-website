@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap");
+
+
+/* ================= GENERAL ================= */
+
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: white;
+
+  color: #111;
+}
+
+
+/* ================= HERO ================= */
+
+.services-hero {
+  min-height: 230px;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 30, 50, 0.68),
+      rgba(20, 30, 50, 0.68)
+    ),
+    url("../assets/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 35px 15%;
+}
+
+.services-hero h1 {
+  color: #ffc107;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 38px;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.services-hero p {
+  max-width: 850px;
+
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ================= SERVICE DETAIL ================= */
+
+.service-detail {
+  min-height: 330px;
+
+  padding: 45px 5.5%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 70px;
+
+  box-sizing: border-box;
+}
+
+.service-detail.reverse {
+  flex-direction: row;
+}
+
+
+/* CONTENT */
+
+.service-detail-content {
+  flex: 1;
+
+  max-width: 520px;
+}
+
+.service-detail-content h2 {
+  color: #283451;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  margin-bottom: 8px;
+}
+
+.service-detail-content h3 {
+  color: #111;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 12px;
+}
+
+.service-detail-content > p {
+  color: #555;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  margin-bottom: 15px;
+}
+
+.service-detail-content h4 {
+  color: #283451;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 13px;
+
+  margin-bottom: 8px;
+}
+
+
+/* LIST */
+
+.service-detail-content ul {
+  margin: 0 0 18px;
+
+  padding-left: 18px;
+}
+
+.service-detail-content li {
+  color: #555;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+
+  position: relative;
+}
+
+
+/* BUTTON */
+
+.service-detail-content button,
+.service-detail-content .service-button {
+  border: 2px solid #f59e0b;
+
+  border-radius: 20px;
+
+  background-color: white;
+
+  color: #283451;
+
+  padding: 7px 8px 7px 17px;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+}
+
+.service-detail-content button span,
+.service-detail-content .service-button span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  margin-left: 10px;
+
+  border-radius: 50%;
+
+  background-color: #f59e0b;
+
+  color: white;
+
+  font-size: 16px;
+}
+
+.service-detail-content button span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  margin-left: 10px;
+
+  border-radius: 50%;
+
+  background-color: #f59e0b;
+
+  color: white;
+
+  font-size: 16px;
+}
+
+
+/* IMAGE */
+
+.service-detail > img {
+  width: 46%;
+
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+
+  display: block;
+}
+
+
+/* ================= CTA ================= */
+
+.services-cta {
+  min-height: 150px;
+
+  padding: 30px 8%;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 30, 50, 0.82),
+      rgba(20, 30, 50, 0.82)
+    ),
+    url("../assets/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.services-cta h2 {
+  color: #ffc107;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  margin-bottom: 8px;
+}
+
+.services-cta p {
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  margin-bottom: 15px;
+}
+
+.services-cta .service-button {
+  border: 2px solid #f59e0b;
+  border-radius: 20px;
+  background-color: white;
+  color: #283451;
+  padding: 7px 8px 7px 17px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.services-cta .service-button span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  margin-left: 10px;
+
+  border-radius: 50%;
+
+  background-color: #f59e0b;
+
+  color: white;
+
+  font-size: 16px;
+}
+
+/* ================= FOOTER ================= */
+
+.services-footer {
+  background-color: #1c263b;
+
+  padding: 45px 7%;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+
+  gap: 35px;
+}
+
+
+/* FOOTER ABOUT */
+
+.footer-about img {
+  width: 135px;
+
+  background-color: white;
+
+  padding: 3px;
+
+  margin-bottom: 12px;
+}
+
+.footer-about p {
+  max-width: 240px;
+
+  color: #d9d9d9;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.footer-column h3 {
+  color: #f59e0b;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  margin-bottom: 7px;
+}
+
+.footer-column a,
+.footer-column p {
+  color: #d9d9d9;
+
+  text-decoration: none;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.footer-column a:hover {
+  color: #f59e0b;
+}
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.services-footer-bottom {
+  background-color: #151e30;
+
+  color: #d9d9d9;
+
+  text-align: center;
+
+  padding: 13px;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 10px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+
+  .service-detail,
+  .service-detail.reverse {
+    flex-direction: column;
+
+    gap: 30px;
+
+    padding: 45px 7%;
+  }
+
+  .service-detail-content {
+    max-width: 100%;
+  }
+
+  .service-image {
+  width: 100%;
+  height: 260px;
+}
+  .services-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .services-hero {
+    padding: 40px 7%;
+  }
+
+  .services-hero h1 {
+    font-size: 30px;
+  }
+
+  .services-footer {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ================= IMAGE HOVER EFFECT ================= */
+
+/* ================= SERVICES IMAGE HOVER ================= */
+
+.service-image {
+  position: relative;
+  width: 46%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #283451;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+/* Dark overlay */
+
+.service-image .image-hover {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(40, 52, 81, 0.45);
+
+  opacity: 0;
+
+  transition:
+    opacity 0.4s ease,
+    backdrop-filter 0.4s ease;
+
+  backdrop-filter: blur(0px);
+
+  z-index: 2;
+}
+
+/* Corner frame */
+
+.service-image::before,
+.service-image::after {
+  content: "";
+  position: absolute;
+
+  width: 35px;
+  height: 35px;
+
+  border-color: white;
+  border-style: solid;
+
+  opacity: 0;
+
+  z-index: 4;
+
+  transition:
+    opacity 0.3s ease,
+    width 0.35s ease,
+    height 0.35s ease;
+}
+
+.service-image::before {
+  top: 12px;
+  left: 12px;
+  border-width: 2px 0 0 2px;
+}
+
+.service-image::after {
+  right: 12px;
+  bottom: 12px;
+  border-width: 0 2px 2px 0;
+}
+
+/* View Details button */
+
+.service-image .view-details-btn {
+  min-width: 165px;
+  height: 40px;
+
+  padding: 4px 5px 4px 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  color: #283451;
+
+  border: 2px solid #f59e0b;
+  border-radius: 25px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  opacity: 0;
+
+  transform: translateY(25px) scale(0.85);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.5s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Arrow circle */
+
+.service-image .view-details-btn b {
+  width: 29px;
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f59e0b;
+  color: white;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Main hover */
+
+.service-image:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.68) saturate(1.05);
+}
+
+.service-image:hover .image-hover {
+  opacity: 1;
+  backdrop-filter: blur(1.5px);
+}
+
+.service-image:hover .view-details-btn {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.service-image:hover::before,
+.service-image:hover::after {
+  opacity: 1;
+  width: 48px;
+  height: 48px;
+}
+
+/* Button hover */
+
+.service-image .view-details-btn:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.28);
+}
+
+.service-image .view-details-btn:hover b {
+  background: #283451;
+  transform: scale(1.08) rotate(8deg);
+}

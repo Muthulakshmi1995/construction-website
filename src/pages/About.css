@@ -1,0 +1,494 @@
+.about-page {
+  background: #fff;
+  color: #111;
+}
+
+/* HERO */
+
+.about-hero {
+  height: 275px;
+  background-image:
+    linear-gradient(rgba(18, 27, 48, 0.72), rgba(18, 27, 48, 0.72)),
+    url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  color: #f59e0b;
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.about-hero p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* STATS */
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+  max-width: 950px;
+  margin: -60px auto 40px;
+  position: relative;
+}
+
+.stat-card {
+  background: white;
+  min-height: 115px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #f59e0b;
+}
+
+.stat-card h2 {
+  color: #eab308;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 14px;
+}
+
+
+/* OUR STORY */
+
+.our-story {
+  max-width: 1100px;
+  margin: 35px auto 50px;
+  padding: 0 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.story-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.story-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 15px;
+}
+
+.story-images {
+  position: relative;
+  min-height: 370px;
+}
+
+.story-main-image {
+  width: 70%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.story-small-image {
+  width: 52%;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  border: 8px solid white;
+}
+
+
+/* MISSION + VISION */
+
+.mission-section {
+  max-width: 1000px;
+  margin: 20px auto 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  padding: 0 25px;
+}
+
+.mission-card,
+.vision-card {
+  min-height: 245px;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+
+.mission-card {
+  background: #10192d;
+  color: white;
+}
+
+.vision-card {
+  background: #f59e0b;
+  color: white;
+}
+
+.mission-card img,
+.vision-card img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.mission-card h2,
+.vision-card h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.mission-card p,
+.vision-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* CORE VALUES */
+
+.values-section {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 25px;
+}
+
+.values-section > h2 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.value-card {
+  min-height: 180px;
+  border-radius: 12px;
+  padding: 20px 15px;
+  text-align: center;
+  background: white;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+.value-card img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 8px;
+
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover img {
+  transform: scale(1.05);
+}
+.value-card h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+
+  transition: color 0.3s ease;
+}
+
+.value-card:hover h3 {
+  color: #f59e0b;
+}
+.value-card p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* TEAM */
+
+.team-section {
+  text-align: center;
+  max-width: 1100px;
+  margin: 35px auto 55px;
+  padding: 0 25px;
+}
+
+.team-section > h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.team-subtitle {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.team-member {
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+.team-member img {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+
+  transition: transform 0.35s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.04);
+}
+.team-member h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+
+  transition: color 0.3s ease;
+}
+
+.team-member:hover h3 {
+  color: #f59e0b;
+}
+
+.team-member p {
+  font-size: 13px;
+}
+
+/* CTA */
+
+.about-cta {
+  min-height: 310px;
+  background-image:
+    linear-gradient(rgba(15, 26, 50, 0.78), rgba(15, 26, 50, 0.78)),
+    url("/src/assets/images/ChatGPT Image Mar 3, 2026, 12_39_14 PM.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 55px 20px;
+}
+
+.about-cta h2 {
+  font-family: "Oswald", sans-serif;
+  color: #f59e0b;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.about-cta p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.about-cta button {
+  border: 3px solid #f59e0b;
+  border-radius: 25px;
+  background: white;
+  padding: 5px 6px 5px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.about-cta button span {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #f59e0b;
+  color: white;
+  font-size: 20px;
+}
+
+.cta-points {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 13px;
+}
+
+.cta-points span {
+  color: white;
+}
+
+.cta-points span::first-letter {
+  color: #f59e0b;
+}
+
+
+/* FOOTER */
+
+.about-footer {
+  background: #0d162a;
+  color: white;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1.2fr 1.2fr;
+  gap: 50px;
+  padding: 45px 55px 30px;
+}
+
+.footer-about img {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.footer-about p {
+  max-width: 300px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.footer-column a,
+.footer-column p {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 25px;
+  }
+
+  .our-story,
+  .mission-section {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    height: 330px;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .story-images {
+    min-height: 300px;
+  }
+
+  .story-main-image {
+    width: 75%;
+    height: 290px;
+  }
+
+  .story-small-image {
+    height: 140px;
+  }
+
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-footer {
+    grid-template-columns: 1fr;
+    padding: 35px 25px;
+  }
+
+  .cta-points {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}/* =========================
+   COMMON BUTTON HOVER
+========================= */
+
+.hover-orange {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Orange layer */
+.hover-orange::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #f59e0b;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+/* Hover */
+.hover-orange:hover::before {
+  transform: translateX(0);
+}
+.hover-orange span,
+.hover-orange b {
+  position: relative;
+  z-index: 1;
+}

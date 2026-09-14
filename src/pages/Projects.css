@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap");
+
+
+/* ================= GENERAL ================= */
+
+.projects-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  color: #111;
+}
+
+
+/* ================= HERO ================= */
+
+.projects-hero {
+  min-height: 225px;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 30, 50, 0.68),
+      rgba(20, 30, 50, 0.68)
+    ),
+    url("../assets/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 35px 15%;
+}
+
+.projects-hero h1 {
+  color: #ffc107;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 38px;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.projects-hero p {
+  max-width: 850px;
+
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ================= PROJECT SECTION ================= */
+
+.projects-section {
+  padding: 40px 3.5% 45px;
+}
+
+
+/* ================= FILTERS ================= */
+
+.project-filters {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 32px;
+}
+
+.project-filters button {
+  min-width: 108px;
+
+  padding: 7px 20px;
+
+  border: 1px solid #d8b44a;
+
+  border-radius: 20px;
+
+  background-color: white;
+
+  color: #222;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.project-filters button:hover {
+  border-color: #f59e0b;
+
+  color: #283451;
+}
+
+.project-filters button.active {
+  border-color: #f59e0b;
+
+  box-shadow: inset 0 -4px 0 #f59e0b;
+
+  color: #111;
+}
+
+
+/* ================= PROJECT GRID ================= */
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 32px;
+
+  row-gap: 48px;
+}
+
+
+/* ================= PROJECT CARD ================= */
+
+.project-card {
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+
+  height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+
+/* ================= IMAGE HOVER ================= */
+
+.project-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(40, 52, 81, 0.18);
+
+  opacity: 0;
+
+  transition: opacity 0.35s ease;
+
+  pointer-events: none;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.06);
+}
+
+.project-card:hover .project-image::after {
+  opacity: 1;
+}
+
+
+/* ================= CARD TEXT ================= */
+
+.project-card h2 {
+  margin-top: 8px;
+  margin-bottom: 7px;
+
+  color: #111;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.project-card p {
+  margin-bottom: 8px;
+
+  color: #333;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+}
+
+.view-project {
+  border: none;
+
+  background: transparent;
+
+  color: #e2ad18;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.view-project span {
+  margin-left: 4px;
+
+  font-size: 16px;
+}
+
+
+/* ================= CTA ================= */
+
+.projects-cta {
+  min-height: 260px;
+
+  padding: 35px 8%;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 30, 50, 0.82),
+      rgba(20, 30, 50, 0.82)
+    ),
+    url("../assets/images/ChatGPT Image Mar 3, 2026, 12_39_05 PM.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.projects-cta h2 {
+  color: #ffc107;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.projects-cta p {
+  max-width: 650px;
+
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  margin-bottom: 18px;
+}
+
+.projects-cta button {
+  border: 2px solid #f59e0b;
+
+  border-radius: 22px;
+
+  background-color: white;
+
+  color: #283451;
+
+  padding: 7px 8px 7px 17px;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.projects-cta button span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  margin-left: 10px;
+
+  border-radius: 50%;
+
+  background-color: #f59e0b;
+
+  color: white;
+
+  font-size: 16px;
+}
+
+.cta-points {
+  display: flex;
+
+  gap: 25px;
+
+  margin-top: 18px;
+
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+}
+
+.cta-points span {
+  color: #eee;
+}
+
+.cta-points span::first-letter {
+  color: #f59e0b;
+}
+
+
+/* ================= FOOTER ================= */
+
+.projects-footer {
+  background-color: #10192c;
+
+  padding: 30px 3% 35px;
+
+  display: grid;
+
+  grid-template-columns: 2fr 0.8fr 1.4fr 1.3fr;
+
+  gap: 45px;
+}
+
+
+/* FOOTER ABOUT */
+
+.footer-about img {
+  width: 285px;
+
+  max-width: 100%;
+
+  margin-bottom: 12px;
+}
+
+.footer-about p {
+  max-width: 300px;
+
+  color: #d9d9d9;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.footer-column h3 {
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+.footer-column a,
+.footer-column p {
+  color: #d9d9d9;
+
+  text-decoration: none;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+.footer-column a:hover {
+  color: #f59e0b;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .projects-hero {
+    padding: 40px 7%;
+  }
+
+  .projects-hero h1 {
+    font-size: 30px;
+  }
+
+  .project-filters {
+    flex-wrap: wrap;
+
+    gap: 10px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 260px;
+  }
+
+  .projects-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-points {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+}
